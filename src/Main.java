@@ -121,7 +121,19 @@ public class Main {
         } catch (ArithmeticException e) {
             System.out.println("Error: División por cero no permitida.");
         } finally {
-            System.out.println("Este bloque se ejecutará siempre, independientemente de si hay una excepción o no.");
+            System.out.println("Este bloque se ejecutará siempre, independientemente de si hay una excepción o no.\n");
+        }
+        System.out.println("imprima por consola todos los números comprendidos \n" +
+                "entre 10 y 55 (incluidos), pares, y que no son ni el 16 ni múltiplos de 3.\n");
+
+        printNunmbers();
+    }
+
+    public static void printNunmbers(){
+        for(int i = 10; i < 56; i ++){
+            if((i % 2) == 0 && i != 16 && (i % 3) != 0){
+                System.out.println(i);
+            }
         }
     }
 }
